@@ -5,10 +5,11 @@ It's a database
 Contents
 ========
 
- * [About the developer?](#about-the-developer)
+ * [About the developer](#about-the-developer)
 
 
 
 ## About the developer
 This project is done by Tara Saba
+
 Student Number: 9731037
