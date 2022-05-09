@@ -1,0 +1,1 @@
+SELECT id, sheba FROM Accounts WHERE account_type IN (1,4) AND status = 0;

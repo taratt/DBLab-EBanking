@@ -1,0 +1,1 @@
+SELECT id, first_name, last_name FROM Customers WHERE id = ANY (SELECT customer FROM InternetBanks WHERE issue_date >= '1401-01-01');

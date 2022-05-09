@@ -1,0 +1,1 @@
+SELECT first_name, last_name, identification_number, salary FROM BankTellers WHERE branch = 101;

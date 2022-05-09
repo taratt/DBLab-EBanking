@@ -1,0 +1,1 @@
+SELECT * FROM Transactions AS T1 WHERE T1.transaction_id = ANY (SELECT transaction_id FROM Transactions AS T2 WHERE T1.transaction_type <> T2.transaction_type);

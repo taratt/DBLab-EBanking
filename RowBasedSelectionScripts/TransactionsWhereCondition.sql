@@ -1,0 +1,1 @@
+SELECT * FROM Transactions WHERE account_id = 79 AND transaction_type = "واریز"; 

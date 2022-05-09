@@ -1,0 +1,1 @@
+SELECT customer_id FROM AccountOwnerships WHERE EXISTS (SELECT id FROM Accounts WHERE Accounts.id = AccountOwnerships.account_id AND balance > 290000000000);

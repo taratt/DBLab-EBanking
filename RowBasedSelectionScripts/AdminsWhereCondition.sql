@@ -1,0 +1,1 @@
+SELECT id, first_name, last_name FROM Admins WHERE rating > 1.5*(SELECT AVG(rating) FROM Admins);

@@ -1,0 +1,1 @@
+SELECT * FROM Branches WHERE capital >= ALL (SELECT capital FROM Branches);

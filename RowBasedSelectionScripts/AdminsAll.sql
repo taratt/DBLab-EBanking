@@ -1,0 +1,1 @@
+SELECT * FROM Admins WHERE rating >= ALL (SELECT rating FROM Admins);

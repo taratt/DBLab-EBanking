@@ -1,0 +1,1 @@
+SELECT name, interest FROM AccountTypes WHERE id = Any (SELECT account_type FROM Accounts WHERE balance > 295000000000);

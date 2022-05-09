@@ -1,0 +1,1 @@
+SELECT * FROM Accounts WHERE open_date >= ALL (SELECT open_date FROM Accounts where branch=108) AND branch = 108;

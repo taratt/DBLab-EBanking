@@ -1,0 +1,1 @@
+SELECT * FROM Loans WHERE start_date BETWEEN '1370-01-01' AND '1372-12-29';

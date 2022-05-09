@@ -1,0 +1,1 @@
+SELECT * FROM Branches WHERE date_of_establishment LIKE '1349%';

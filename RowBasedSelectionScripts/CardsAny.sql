@@ -1,0 +1,1 @@
+SELECT DISTINCT owner FROM Cards AS C1 WHERE owner =  ANY (SELECT owner FROM Cards AS C2 WHERE C1.id <> C2.id);

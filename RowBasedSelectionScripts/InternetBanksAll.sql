@@ -1,0 +1,1 @@
+SELECT * FROM InternetBanks where customer <> ALL (SELECT DISTINCT customer_id FROM AccountOwnerships AS A1 WHERE customer_id = ANY (SELECT customer_id FROM AccountOwnerships AS A2 WHERE A1.ownership_id <> A2.ownership_id AND A1.customer_id = A2.customer_id));

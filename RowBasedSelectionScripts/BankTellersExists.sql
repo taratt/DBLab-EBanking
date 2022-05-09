@@ -1,0 +1,1 @@
+SELECT * FROM BankTellers WHERE EXISTS (SELECT id FROM Accounts WHERE Accounts.closer = BankTellers.id AND branch = 60);
