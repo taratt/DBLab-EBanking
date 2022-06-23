@@ -1,0 +1,1 @@
+SELECT Admins.id AS ID, first_name, last_name, rating, SUM(amount) FROM Transactions JOIN Admins ON admin_id = Admins.id WHERE rating > 3.5 GROUP BY Admins.id Having COUNT(Transactions.transaction_id)>1;

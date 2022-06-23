@@ -1,0 +1,1 @@
+SELECT Customers.id, first_name, last_name, COUNT(account_id) FROM Customers JOIN AccountOwnerships ON customer_id = Customers.id GROUP BY customer_id HAVING COUNT(account_id)>2;

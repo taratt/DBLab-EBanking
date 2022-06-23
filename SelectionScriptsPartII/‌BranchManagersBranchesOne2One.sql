@@ -1,0 +1,1 @@
+SELECT BranchManagers.id, first_name, last_name, capital FROM BranchManagers JOIN Branches ON BranchManagers.branch = Branches.id WHERE capital>300000000000;

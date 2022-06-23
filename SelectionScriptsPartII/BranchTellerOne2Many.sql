@@ -1,0 +1,1 @@
+SELECT AVG(salary) AS average_salary, Branches.branch_name FROM BankTellers JOIN Branches ON BankTellers.branch = Branches.id WHERE Branches.address LIKE "تهران%" GROUP BY Branches.id Having AVG(salary)>55000000;

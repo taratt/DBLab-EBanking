@@ -1,0 +1,1 @@
+SELECT T1.transaction_id,T1.amount, T1.account_id AS account_1, T2.account_id AS account_2 FROM Transactions AS T1 JOIN Transactions AS T2 ON T1.transaction_id = T2.transaction_id AND T1.account_id < T2.account_id ORDER BY T1.transaction_id;

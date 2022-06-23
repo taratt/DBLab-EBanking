@@ -1,0 +1,1 @@
+SELECT Customers.id AS customer_id, Customers.first_name, Customers.last_name, AccountOwnerships.account_id FROM Customers JOIN AccountOwnerships ON Customers.id = AccountOwnerships.customer_id;

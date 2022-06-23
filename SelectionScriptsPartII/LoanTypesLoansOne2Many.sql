@@ -1,0 +1,1 @@
+SELECT branch, name, SUM(remainder) as sum_of_remainder FROM LoanTypes JOIN Loans ON Loans.loan_type = LoanTypes.id WHERE Loans.start_date > "1390-01-01" GROUP BY Loans.branch,name Having COUNT(loans.id)>0;

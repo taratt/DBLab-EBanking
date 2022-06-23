@@ -1,0 +1,1 @@
+SELECT Branches.id, branch_name, date_of_establishment, MAX(balance) FROM Branches JOIN Accounts ON branch = Branches.id GROUP BY Branches.id;

@@ -1,0 +1,1 @@
+SELECT branch_name, first_name AS Manager_first_name, last_name AS manager_last_name FROM Cards JOIN Branches ON Cards.branch = Branches.id JOIN BranchManagers ON BranchManagers.branch = Branches.id GROUP BY Branches.id ORDER BY COUNT(Cards.id) DESC LIMIT 1 OFFSET 1;

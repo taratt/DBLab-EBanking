@@ -1,0 +1,1 @@
+SELECT branch_name, COUNT(InternetBanks.id) AS number_of_internet_banks FROM InternetBanks JOIN Branches ON branch = Branches.id GROUP BY Branches.id;

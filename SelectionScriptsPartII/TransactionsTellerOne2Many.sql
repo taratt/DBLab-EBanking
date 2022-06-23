@@ -1,0 +1,1 @@
+SELECT branch, SUM(amount) AS total_amount FROM Transactions JOIN BankTellers ON teller_id = BankTellers.id GROUP BY branch ORDER BY SUM(amount) DESC LIMIT 3;

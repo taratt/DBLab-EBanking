@@ -1,0 +1,1 @@
+SELECT Loans.id AS loan_id, Customers.first_name AS borrower_fname, Customers.last_name AS borrower_lname, Guarantors.first_name AS guarantor_fname, Guarantors.last_name AS guarantor_lname FROM Loans JOIN Guarantors ON guarantor = Guarantors.id JOIN Accounts on account = Accounts.id JOIN AccountOwnerships ON account_id = Accounts.id JOIN Customers ON customer_id = Customers.id;

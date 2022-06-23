@@ -1,0 +1,1 @@
+SELECT Guarantors.id, payslip_code, remainder FROM Guarantors JOIN LOANS ON guarantor = Guarantors.id AND remainder>= 90000000 ORDER BY Guarantors.id;
