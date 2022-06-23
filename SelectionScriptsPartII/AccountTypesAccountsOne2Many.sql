@@ -1,0 +1,1 @@
+SELECT name, AVG(balance) as average_balance FROM AccountTypes JOIN Accounts ON Accounts.account_type = AccountTypes.id where Accounts.status = 1 GROUP BY Accounts.account_type Having COUNT(Accounts.id)>20;
